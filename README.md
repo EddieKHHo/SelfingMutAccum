@@ -27,8 +27,8 @@ Below is an example of a parameter text file (this is also provided as SamplePar
 -mfn Simulation1  
 -nr 10  
 -mng 450000  
--xdat 100  
 -xmin 10000  
+-xdat 100 
 -qneu 1  
 -l 5000  
 -n 10000  
@@ -54,4 +54,21 @@ Below is an example of a parameter text file (this is also provided as SamplePar
 -prc 1  
 -prf0 0.5  
 #No blank lines for last line  
+
+Definition of each parameter:
+* dir is the directory for outputing the result files for the simulation.
+* mfn is the file name for the simulation being run (Integer).
+* nr is the number of replicates to run the simulation (Integer).
+* mng is the number of generation to run the simulation before it ends (Integer).
+* xmin is the generation from which data collection will start (Integer).
+* xdat is the interval, in generations, between collection data (Integer).
+* qneu indicates whether the simulation should track neutral loci for measuring effective populations size (0 = No, 1 = Yes).
+* l is the number of loci in the genome (Integer).
+* n is the population size of the selfing population (Integer).
+* u is the diploid genome wide rate of mutation (Integer).
+* h is the dominance coefficient for deleterious mutations (Integer).
+* s is the unmodulated selection coefficient for deleterious mutations. The effects of these deleterious mutations occuring at loci under constant selection and loci under fluctuating selection is modulated by the parameters d0a, d0b, d1a, d1b and d2c. Specifically at a locus experiencing constant selection a deleterious mutation in the heterozygous state reduces fitness by a factor of (1-h*s*d2c). At a locus experiencing fluctuating selection a deleterious mutation in the heterozygous state reduces fitness by a factor (1-h*s*d0a) and (1-h*s*d0a) in environment A and B, respectively. There are two sets of loci under fluctuating selection in the genome {d0a, d0b} modulates s for set F1 and {d1a, d1b} modulates s for set F2. For the simulations in the manuscript I kept d0a=d1a and d0b=d1b to make fluctuating selection at the two sets equivalent.
+
+
+
 
