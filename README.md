@@ -1,9 +1,10 @@
-README for simulating selfing populations experiencing fluctuaing selection.
+### README for simulating selfing populations experiencing fluctuating selection.
 
 This program is written in C++. It simulates a selfing population whose genomes contain a mixture of loci experiencing time constant selection and loci experiencing selection that fluctuates over time. This program was used in the manuscript "Mutation accumulation in selfing populations under fluctuating selection" by Eddie Ho and Aneil Agrawal 2017 (unpublished).
 
-RUNNING THE PROGRAM
-This program is meant to be run on a command line. It must first be compiled with these files all within the same folder and typing './make':
+#### RUNNING THE PROGRAM  
+This program is meant to be run on a command line. 
+It must first be compiled with these files all within the same folder and typing './make':
 * GlobalConstants.h
 * IncludeFiles.h
 * SharedFunctions.h
