@@ -117,3 +117,6 @@ There are three result files outputed from the simulation in the given output di
    * The variance in the neutral quantitative trait for calculating effective population size.
    * The mean and variance in fitness among indivduals.
    * The mean and variance number of deleterious and beneficial mutations at C-loci and F-loci across individuals.
+
+#### CONTACT
+Eddie Ho (eddie.ho@mail.utoronto.ca)
