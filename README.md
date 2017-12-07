@@ -33,7 +33,7 @@ After compiling the program is run by reading a text file containing all the nec
 #### EXAMPLE PARAMETER FILE
 Below is an example of a parameter text file (this is also provided as SampleParameters.txt):  
 -dir /User/OutputResult/  
--mfn Simulation1  
+-mfn MySim  
 -nr 10  
 -mng 60000  
 -xmin 10000  
@@ -103,6 +103,14 @@ Below are a few examples of changes that can be made to the sample parameter fil
 5. -eps -0.25 would cause the correlation in selective states between F1 and F2 to be -1.  
 6. -sto 2 would change to the exponential model (values of phi, psi, eps, d0a, d0b, d1a, d1b are all ignored).  
 
+#### OUTPUT
+There are three result files outputed from the simulation in the given output directory (all are comma separated files). following the example parameter file above the three output files for the first replicate would be:
+1. MySim1_LociGroups.txt
+...This file shows the position of C-loci, F1-loci and F2-loci in the genome.
+2. MySim1_EnvFlucData.txt
+...This file gives the frequency and average run length of each environment during the simulation.
+3. MySim1.txt
+...This file contains the main results of the simulation.
 
 
 
