@@ -106,11 +106,22 @@ Below are a few examples of changes that can be made to the sample parameter fil
 #### OUTPUT
 There are three result files outputed from the simulation in the given output directory (all are comma separated files). following the example parameter file above the three output files for the first replicate would be:
 1. MySim1_LociGroups.txt
-...This file shows the position of C-loci, F1-loci and F2-loci in the genome.
+
+ ...This file shows the position of C-loci, F1-loci and F2-loci in the genome.
+ 
 2. MySim1_EnvFlucData.txt
-...This file gives the frequency and average run length of each environment during the simulation.
+
+ ...This file gives the frequency and average run length of each environment during the simulation.
+ 
 3. MySim1.txt
-...This file contains the main results of the simulation.
+
+ ...This file contains the main results of the simulation. It contains results from generation xmin to mng in intervals of xdat. All relevant parameters are also shown in this output along with information about:
+ * The number of deleterious and beneficial fixations at C-loci and F-loci.
+ * The variance in the neutral quantitative trait for calculating effective population size.
+ * The mean and variance in fitness among indivduals.
+ * The mean and variance number of deleterious and beneficial mutations at C-loci and F-loci across individuals.
+ 
+ 
 
 
 
