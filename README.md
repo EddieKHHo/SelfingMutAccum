@@ -119,4 +119,4 @@ There are three result files outputed from the simulation in the given output di
    * The mean and variance number of deleterious and beneficial mutations at C-loci and F-loci across individuals.
 
 #### CONTACT
-Eddie Ho (eddie.ho@mail.utoronto.ca)
+Eddie Ho (eddie.kaho.ho@gmail.com)
